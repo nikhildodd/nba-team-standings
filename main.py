@@ -58,6 +58,8 @@ if __name__ == "__main__":
             for team_data in standings_data:
                 print('team:', team_data)
                 team_name = fetchTeamNames(team_data["teamId"])
-    finally:
-        print('done')
+    
+    except Exception as e:
+        print("Error")  
+        print(e)
 
